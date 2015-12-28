@@ -9,13 +9,16 @@
 /* Begin PBXBuildFile section */
 		844EA0161C2DAF0F00BB55BB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 844EA0151C2DAF0F00BB55BB /* main.m */; };
 		844EA0191C2DAF0F00BB55BB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 844EA0181C2DAF0F00BB55BB /* AppDelegate.m */; };
-		844EA01C1C2DAF0F00BB55BB /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 844EA01B1C2DAF0F00BB55BB /* ViewController.m */; };
+		844EA01C1C2DAF0F00BB55BB /* GameFoeTwoPlayersViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 844EA01B1C2DAF0F00BB55BB /* GameFoeTwoPlayersViewController.m */; };
 		844EA01F1C2DAF0F00BB55BB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 844EA01D1C2DAF0F00BB55BB /* Main.storyboard */; };
 		844EA0221C2DAF0F00BB55BB /* Cities_game.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 844EA0201C2DAF0F00BB55BB /* Cities_game.xcdatamodeld */; };
 		844EA0241C2DAF0F00BB55BB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 844EA0231C2DAF0F00BB55BB /* Assets.xcassets */; };
 		844EA0271C2DAF0F00BB55BB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 844EA0251C2DAF0F00BB55BB /* LaunchScreen.storyboard */; };
 		844EA0321C2DAF0F00BB55BB /* Cities_gameTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 844EA0311C2DAF0F00BB55BB /* Cities_gameTests.m */; };
 		844EA03D1C2DAF0F00BB55BB /* Cities_gameUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 844EA03C1C2DAF0F00BB55BB /* Cities_gameUITests.m */; };
+		847ED3F91C2F408A00B7B161 /* RecordsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 847ED3F81C2F408A00B7B161 /* RecordsTableViewController.m */; };
+		84D445251C2F12890052908F /* LogicGame.m in Sources */ = {isa = PBXBuildFile; fileRef = 84D445241C2F12890052908F /* LogicGame.m */; };
+		84D445281C2F19DA0052908F /* GameFoeOnePlayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84D445271C2F19DA0052908F /* GameFoeOnePlayerViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,8 +43,8 @@
 		844EA0151C2DAF0F00BB55BB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		844EA0171C2DAF0F00BB55BB /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		844EA0181C2DAF0F00BB55BB /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		844EA01A1C2DAF0F00BB55BB /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		844EA01B1C2DAF0F00BB55BB /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		844EA01A1C2DAF0F00BB55BB /* GameFoeTwoPlayersViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GameFoeTwoPlayersViewController.h; sourceTree = "<group>"; };
+		844EA01B1C2DAF0F00BB55BB /* GameFoeTwoPlayersViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GameFoeTwoPlayersViewController.m; sourceTree = "<group>"; };
 		844EA01E1C2DAF0F00BB55BB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		844EA0211C2DAF0F00BB55BB /* Cities_game.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Cities_game.xcdatamodel; sourceTree = "<group>"; };
 		844EA0231C2DAF0F00BB55BB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -53,6 +56,12 @@
 		844EA0381C2DAF0F00BB55BB /* Cities gameUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Cities gameUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		844EA03C1C2DAF0F00BB55BB /* Cities_gameUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Cities_gameUITests.m; sourceTree = "<group>"; };
 		844EA03E1C2DAF0F00BB55BB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		847ED3F71C2F408A00B7B161 /* RecordsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecordsTableViewController.h; sourceTree = "<group>"; };
+		847ED3F81C2F408A00B7B161 /* RecordsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecordsTableViewController.m; sourceTree = "<group>"; };
+		84D445231C2F12890052908F /* LogicGame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LogicGame.h; sourceTree = "<group>"; };
+		84D445241C2F12890052908F /* LogicGame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LogicGame.m; sourceTree = "<group>"; };
+		84D445261C2F19DA0052908F /* GameFoeOnePlayerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameFoeOnePlayerViewController.h; sourceTree = "<group>"; };
+		84D445271C2F19DA0052908F /* GameFoeOnePlayerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameFoeOnePlayerViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,10 +112,16 @@
 		844EA0131C2DAF0F00BB55BB /* Cities game */ = {
 			isa = PBXGroup;
 			children = (
+				84D445231C2F12890052908F /* LogicGame.h */,
+				84D445241C2F12890052908F /* LogicGame.m */,
 				844EA0171C2DAF0F00BB55BB /* AppDelegate.h */,
 				844EA0181C2DAF0F00BB55BB /* AppDelegate.m */,
-				844EA01A1C2DAF0F00BB55BB /* ViewController.h */,
-				844EA01B1C2DAF0F00BB55BB /* ViewController.m */,
+				844EA01A1C2DAF0F00BB55BB /* GameFoeTwoPlayersViewController.h */,
+				844EA01B1C2DAF0F00BB55BB /* GameFoeTwoPlayersViewController.m */,
+				84D445261C2F19DA0052908F /* GameFoeOnePlayerViewController.h */,
+				84D445271C2F19DA0052908F /* GameFoeOnePlayerViewController.m */,
+				847ED3F71C2F408A00B7B161 /* RecordsTableViewController.h */,
+				847ED3F81C2F408A00B7B161 /* RecordsTableViewController.m */,
 				844EA01D1C2DAF0F00BB55BB /* Main.storyboard */,
 				844EA0231C2DAF0F00BB55BB /* Assets.xcassets */,
 				844EA0251C2DAF0F00BB55BB /* LaunchScreen.storyboard */,
@@ -210,6 +225,7 @@
 				TargetAttributes = {
 					844EA0101C2DAF0F00BB55BB = {
 						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = 7VZHFC2543;
 					};
 					844EA02C1C2DAF0F00BB55BB = {
 						CreatedOnToolsVersion = 7.2;
@@ -273,10 +289,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				844EA01C1C2DAF0F00BB55BB /* ViewController.m in Sources */,
+				84D445281C2F19DA0052908F /* GameFoeOnePlayerViewController.m in Sources */,
+				844EA01C1C2DAF0F00BB55BB /* GameFoeTwoPlayersViewController.m in Sources */,
 				844EA0191C2DAF0F00BB55BB /* AppDelegate.m in Sources */,
+				847ED3F91C2F408A00B7B161 /* RecordsTableViewController.m in Sources */,
 				844EA0221C2DAF0F00BB55BB /* Cities_game.xcdatamodeld in Sources */,
 				844EA0161C2DAF0F00BB55BB /* main.m in Sources */,
+				84D445251C2F12890052908F /* LogicGame.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -417,11 +436,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "Cities game/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Cybernik.Cities-game";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -429,11 +451,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "Cities game/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Cybernik.Cities-game";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
