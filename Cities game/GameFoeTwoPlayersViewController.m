@@ -34,7 +34,6 @@ static bool isTwo;
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     
-//    [[self navigationController] setNavigationBarHidden:YES animated:YES];
     [self.numberPlayer setTransform:CGAffineTransformMakeRotation(-M_PI)];
 }
 

@@ -31,6 +31,29 @@ static NSUInteger const countImages = 10;
     return [self shuffle:buttonArrayName];
 }
 
++ (NSMutableArray *)logicGameSixButtonWithArray:(NSArray *)activeCitiesArray {
+    
+    NSMutableArray *buttonArrayName = [[NSMutableArray alloc]
+                                       initWithObjects:[activeCitiesArray firstObject], nil];
+    
+    NSMutableArray *tempArrayAllName = [[NSMutableArray alloc]
+                                        initWithArray:[self getCitiesName] copyItems:YES];
+    
+    [tempArrayAllName removeObject:[buttonArrayName firstObject]];
+    [buttonArrayName addObject:[tempArrayAllName objectAtIndex:arc4random()%(countImages-2)]];
+    [tempArrayAllName removeObject:[buttonArrayName objectAtIndex:1]];
+    [buttonArrayName addObject:[tempArrayAllName objectAtIndex:arc4random()%(countImages-3)]];
+    [tempArrayAllName removeObject:[buttonArrayName objectAtIndex:2]];
+    [buttonArrayName addObject:[tempArrayAllName objectAtIndex:arc4random()%(countImages-4)]];
+    [tempArrayAllName removeObject:[buttonArrayName objectAtIndex:3]];
+    [buttonArrayName addObject:[tempArrayAllName objectAtIndex:arc4random()%(countImages-5)]];
+    [tempArrayAllName removeObject:[buttonArrayName objectAtIndex:4]];
+    [buttonArrayName addObject:[tempArrayAllName objectAtIndex:arc4random()%(countImages-6)]];
+    [tempArrayAllName removeObject:[buttonArrayName objectAtIndex:5]];
+    
+    return [self shuffle:buttonArrayName];
+}
+
 + (NSMutableArray *)shuffle:(NSArray*) array {
     
     NSMutableArray *tempArray = [[NSMutableArray alloc] initWithArray:array copyItems:YES];

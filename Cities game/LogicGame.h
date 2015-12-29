@@ -11,6 +11,7 @@
 @interface LogicGame : NSObject
 
 + (NSMutableArray *)logicGameWithArray:(NSArray *)activeCitiesArray;
++ (NSMutableArray *)logicGameSixButtonWithArray:(NSArray *)activeCitiesArray;
 + (NSMutableArray*)shuffle:(NSArray*) array;
 + (NSArray *)getCitiesName;
 

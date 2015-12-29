@@ -10,7 +10,7 @@
 
 @interface RecordsTableViewController ()
 
-@property (strong, nonatomic) NSMutableArray* nameArray;
+@property (strong, nonatomic) NSArray* nameArray;
 
 @end
 
@@ -30,9 +30,6 @@
     
     self.nameArray = [[NSMutableArray alloc] initWithArray:
                       [defaults objectForKey:@"player"]];
-    
-//    NSSortDescriptor *sortByName = [NSSortDescriptor sortDescriptorWithKey:@"count"
-//                                                                 ascending:NO];
 
     NSSortDescriptor *sortByName = [NSSortDescriptor
                                     sortDescriptorWithKey:@"count"
@@ -67,27 +64,17 @@
     cell.textLabel.text = [dictionary valueForKey:@"name"];
     cell.detailTextLabel.text = [dictionary valueForKey:@"count"];
     
-    return cell;
-}
-
-- (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath {
-    
-    return NO;
-}
-
-- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle
-forRowAtIndexPath:(NSIndexPath *)indexPath {
-    
-    if (editingStyle == UITableViewCellEditingStyleDelete) {
-
-        [self.nameArray removeObjectAtIndex:indexPath.row];
-        
-        NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
-        [defaults setObject:self.nameArray forKey:@"player"];
-        
-        [tableView deleteRowsAtIndexPaths:[NSArray arrayWithObject:indexPath]
-                         withRowAnimation:UITableViewRowAnimationFade];
+    if (indexPath.row >= 0 && indexPath.row < 3) {
+        cell.detailTextLabel.textColor = [UIColor greenColor];
     }
+    else if (indexPath.row >= 3 && indexPath.row < 6) {
+        cell.detailTextLabel.textColor = [UIColor yellowColor];
+    }
+    else {
+        cell.detailTextLabel.textColor = [UIColor redColor];
+    }
+    
+    return cell;
 }
 
 @end

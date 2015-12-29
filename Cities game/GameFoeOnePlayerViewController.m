@@ -25,11 +25,9 @@
 
 @implementation GameFoeOnePlayerViewController
 
-- (void)viewDidLoad {
-    [super viewDidLoad];
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
     // Do any additional setup after loading the view, typically from a nib.
-    
-//    [[self navigationController] setNavigationBarHidden:YES animated:YES];
     
     self.citiesNameArray = [LogicGame getCitiesName];
     
@@ -63,13 +61,15 @@
     [self.playerOneButtonB setTitle:[arrayName objectAtIndex:1] forState:UIControlStateNormal];
     [self.playerOneButtonC setTitle:[arrayName objectAtIndex:2] forState:UIControlStateNormal];
     [self.playerOneButtonD setTitle:[arrayName objectAtIndex:3] forState:UIControlStateNormal];
+    [self.playerOneButtonE setTitle:[arrayName objectAtIndex:4] forState:UIControlStateNormal];
+    [self.playerOneButtonF setTitle:[arrayName objectAtIndex:5] forState:UIControlStateNormal];
 }
 
 - (void)logicGame {
     
     [self setImagesWithName:[self.activeCitiesArray firstObject]];
     
-    self.buttonArrayName = [LogicGame logicGameWithArray:self.activeCitiesArray];
+    self.buttonArrayName = [LogicGame logicGameSixButtonWithArray:self.activeCitiesArray];
     
     [self setTextToButtonWithArray:self.buttonArrayName];
 }

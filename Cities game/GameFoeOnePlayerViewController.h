@@ -18,6 +18,8 @@
 @property (weak, nonatomic) IBOutlet UIButton *playerOneButtonB;
 @property (weak, nonatomic) IBOutlet UIButton *playerOneButtonC;
 @property (weak, nonatomic) IBOutlet UIButton *playerOneButtonD;
+@property (weak, nonatomic) IBOutlet UIButton *playerOneButtonE;
+@property (weak, nonatomic) IBOutlet UIButton *playerOneButtonF;
 
 - (IBAction)actionPlayerOnePushButton:(id)sender;
 
